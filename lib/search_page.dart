@@ -43,11 +43,11 @@ class SearchPage extends StatelessWidget {
                 ),
               ),
               const Divider(thickness: 1),
-              Expanded(
+              const Expanded(
                 child: SingleChildScrollView(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _SectionHeader(title: 'YESTERDAY'),
                       _SearchHistoryTile(
                         search: '481 Van Brunt Street',
@@ -99,7 +99,7 @@ class _SectionHeader extends StatelessWidget {
       ),
       child: Text(
         title,
-        style: Theme.of(context).textTheme.button,
+        style: Theme.of(context).textTheme.labelLarge,
       ),
     );
   }

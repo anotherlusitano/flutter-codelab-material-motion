@@ -405,7 +405,7 @@ class _AnimatedBottomAppBar extends StatelessWidget {
                                         currentlySelectedInbox,
                                         style: Theme.of(context)
                                             .textTheme
-                                            .bodyText1!
+                                            .bodyLarge!
                                             .copyWith(
                                               color: ReplyColors.white50,
                                             ),
@@ -601,7 +601,7 @@ class _BottomDrawerDestinations extends StatelessWidget {
                   ),
                   title: Text(
                     destination.name,
-                    style: theme.textTheme.bodyText2!.copyWith(
+                    style: theme.textTheme.bodyMedium!.copyWith(
                       color: destination.name == currentlySelectedInbox
                           ? theme.colorScheme.secondary
                           : ReplyColors.white50.withOpacity(0.64),
@@ -652,7 +652,7 @@ class _BottomDrawerFolderSection extends StatelessWidget {
               ),
               title: Text(
                 folder,
-                style: theme.textTheme.bodyText2!.copyWith(
+                style: theme.textTheme.bodyMedium!.copyWith(
                   color: ReplyColors.white50.withOpacity(0.64),
                 ),
               ),
