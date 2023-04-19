@@ -731,7 +731,6 @@ class _ReplyFabState extends State<_ReplyFab>
               );
         final tooltip = onMailView ? 'Reply' : 'Compose';
 
-        // TODO: Add Container Transform from FAB to compose email page (Motion)
         return OpenContainer(
           openBuilder: (context, closedContainer) {
             return const ComposePage();
